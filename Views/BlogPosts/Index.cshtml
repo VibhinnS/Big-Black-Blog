@@ -1,0 +1,10 @@
+@model IEnumerable<BlogApp.Models.BlogPost>
+
+<h1>Blog Posts</h1>
+
+<ul>
+@foreach (var post in Model)
+{
+    <li>@post.Title by @post.Author on @post.PublishedDate</li>
+}
+</ul>
